@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package pb;
+
+import "rpc_make_img.proto";
+
+service Shotifypy{
+    rpc HtmlSnapshot(MakeImageFromHtmlRequest) returns (MakeImageFromHtmlResponse) {}
+}
